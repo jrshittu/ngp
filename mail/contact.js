@@ -1,6 +1,6 @@
 $(function () {
 
-    $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+    $("#HireForm input, #HireForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
         },
@@ -15,7 +15,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "Hire.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -32,7 +32,7 @@ $(function () {
                             .append("<strong>Your message has been sent. </strong>");
                     $('#success > .alert-success')
                             .append('</div>');
-                    $('#contactForm').trigger("reset");
+                    $('#HireForm').trigger("reset");
                 },
                 error: function () {
                     $('#success').html("<div class='alert alert-danger'>");
@@ -40,7 +40,7 @@ $(function () {
                             .append("</button>");
                     $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
                     $('#success > .alert-danger').append('</div>');
-                    $('#contactForm').trigger("reset");
+                    $('#HireForm').trigger("reset");
                 },
                 complete: function () {
                     setTimeout(function () {
