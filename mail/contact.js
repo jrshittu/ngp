@@ -1,7 +1,7 @@
 $(function () {
 
     $("#HireForm input, #HireForm textarea").jqBootstrapValidation({
-        prResourcesubmit: true,
+        preventSubmit: true,
         submitError: function ($form, event, errors) {
         },
         submitSuccess: function ($form, event) {
