@@ -4,7 +4,7 @@ Welcome to the README documentation for the NextGen Prodigy website. This README
 
 ### Overview
 
-The NextGen Prodigy website is an e-learning platform aimed at training future tech leaders. It offers a variety of coding and computing courses for kids, along with an engaging virtual learning experience.
+NextGen Prodigy website is an e-learning platform aimed at training future tech leaders. It offers a variety of coding and computing courses for kids, along with an engaging virtual learning experience.
 
 ### Key Sections
 
